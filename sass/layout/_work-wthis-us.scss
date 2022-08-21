@@ -1,0 +1,40 @@
+.datum__icons-functions{
+	@extend %aling;
+	justify-content: center;
+	@include dimensions(270px,120px);
+	background-color: var(--further-color);
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.datum__icons-works{
+	@extend %aling;
+	justify-content: center;
+	gap:30px;
+}
+
+
+.works-datum{
+	@include padding(94px, 100px);
+} 
+.datum__list{
+	display: flex;
+	justify-content:center;
+	gap: 30px;
+}
+.datum__title {
+
+	flex-basis: calc((100% - 60px) / 3);
+}
+
+.datum__sub-title {
+	margin-bottom: 9px;
+	@include font(14px,700,16px);
+	text-transform: uppercase;
+	color: var(--second-color);
+	
+}
+
+.datum__middle-title {
+	@include font(14px,400,24px);
+	color: var(--plus-color);
+}

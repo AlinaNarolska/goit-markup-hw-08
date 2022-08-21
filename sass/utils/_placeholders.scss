@@ -1,0 +1,19 @@
+%animation{
+    transition-duration:var(--transition-duration);
+    transition-timing-function:var(--transition-function);
+}
+
+%aling{
+    display:flex;
+    align-items: center;
+}
+
+%dimensions{
+    font-weight: var(--secondary-font-weight);
+    line-height: var(--main-line-height);
+}
+
+%retreat{
+    text-align: center;
+    margin:0 auto;
+}

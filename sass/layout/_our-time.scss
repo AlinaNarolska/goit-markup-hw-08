@@ -1,0 +1,63 @@
+.employees-sections {
+	padding-top:94px ;
+	padding-bottom: 94px;
+	background-color:var(--further-color);
+
+}
+.employees__main{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.employees__list{
+	flex-basis: calc((100% - 90px) / 4);
+	width: 270px;
+	background-color: var(--staple-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	
+}
+.employees__card{
+ 	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.employees__name {
+	margin-bottom: 10px;
+	@include font(16px,500,19px);
+	text-align: center;
+	color: var(--second-color);
+	
+}
+.employees__position {
+	@include font(16px,400,19px);
+	text-align: center;
+	color: var(--plus-color);
+	margin-bottom: 16px;
+}
+.social-list{
+	display: flex;
+	justify-content: center;
+	gap:10px;
+
+}
+.social-list-link{
+	@extend %aling;
+	justify-content:center;
+	@include dimensions(44px,44px);
+	border-radius: 50%;
+	background-color: var(--staple-color);
+	color: var(--extra-color);
+	transition-property: color,background-color;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	
+&:hover,
+&:focus{
+	background-color: var(--accent-color);
+	color:var(--staple-color);
+}
+}
+.social-list-icon{
+	fill:currentColor;
+	
+}

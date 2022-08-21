@@ -1,0 +1,24 @@
+.overlay{
+	position:absolute;
+	display:block;
+	@include padding(63px,91px);
+	padding-right: 24px;
+	padding-left: 24px;
+	left: 0;
+	top: 0;
+	@include dimensions(100%,100%);
+	overflow-y: scroll;
+	transform:translate(0,101%);
+	transition-property: color;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	@include font(18px,400,28px);
+	font-style: normal;
+	line-height: 1.55rem;
+	letter-spacing:var(--main-letter-spacing);
+	color:var(--staple-color);
+	background-color: rgba(33, 150, 243, 0.9);
+	transition-property: color, background-color, box-shadow;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+}

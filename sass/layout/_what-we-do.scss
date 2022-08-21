@@ -1,0 +1,36 @@
+.works-made{
+	padding-bottom: 94px;
+
+}
+.description {
+	margin-bottom: 50px;
+	text-align: center;
+	@include font(36px,700,42px);
+	color: var(--second-color);
+	
+}
+.list-made{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.item-made{
+	flex-basis: calc((100% - 60px) / 3);
+}
+.description-item{
+	
+	position:absolute;
+	@include dimensions(100%,70px);
+	bottom:0;
+	@include font(14px,700,16px);
+	text-transform: uppercase;
+	color:var(--staple-color);
+	background-color:rgba(47, 48, 58, 0.8);
+	@extend %aling;
+	justify-content: center;
+}
+.work-overlay{
+
+	position: relative;
+	
+}

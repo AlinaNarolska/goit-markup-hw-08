@@ -1,0 +1,8 @@
+.modal-close-btn-icon {
+	fill:currentColor;
+
+.modal-close-btn:hover &,
+.modal-close-btn:focus & {
+	fill:var(--accent-color);
+}
+}

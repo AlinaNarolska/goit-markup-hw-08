@@ -1,0 +1,27 @@
+.customers{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+.companies__link{
+	@extend %aling;
+	justify-content: center;
+	@include dimensions(170px,92px);
+	border: 1px solid var(--extra-color);
+	border-radius: 4px;
+	color:var(--extra-color);
+	transition-property: color,border;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	
+&:hover,
+&:focus{
+	border:1px solid var(--accent-color);
+	color:var(--accent-color);
+
+}
+}
+.companies__icons{
+	fill:currentColor;
+	
+}
