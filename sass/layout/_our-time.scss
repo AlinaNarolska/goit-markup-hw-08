@@ -13,6 +13,7 @@
 
 }
 .employees__main{
+	justify-content: center;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
@@ -63,10 +64,7 @@
 	
 }
 @media screen and (max-width:768px) {
-	.employees__list{
-		max-width: 450px;
-		flex-basis: calc(100% - 30px/1);
-	}
+	
 	.employees__photo{
 		width: 100%;
 	}

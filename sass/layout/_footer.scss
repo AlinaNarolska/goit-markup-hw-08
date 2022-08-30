@@ -121,9 +121,7 @@
 		align-items: baseline;
 	 }
 	 .footer__items{
-		margin-top: 53px;
-		display: flex;
-		justify-content: center;
+		text-align: center;
 	 }
 	 .footer__modal-form{
 		align-items: center;
@@ -133,9 +131,12 @@
 	 .footer__modal-information{
 		margin-top: 60px;
 	 }
+	 .footer-icons{
+	margin-left: 0;
+	margin-top: 60px;
+	 }
 }
 @media screen and (min-width:768px) and (min-width:1199px){
-	
 	.footer-hookup{
 		display: block;
 		text-align: center;
@@ -156,7 +157,6 @@
 	}
 
 }
-
 
 @media screen and (min-width:1200px){
 	.footer-hoiku{

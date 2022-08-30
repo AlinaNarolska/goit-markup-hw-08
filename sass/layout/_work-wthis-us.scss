@@ -13,20 +13,20 @@
 }
 
 .works-datum{
-	@include padding(94px, 100px);
+	@include padding(94px, 94px);
 } 
 .datum__list{
 	display: flex;
 	justify-content:center;
 }
 .datum__title {
-
-	flex-basis: calc((100% - 60px) / 1);
+	margin-bottom: 30px;
 }
 
 .datum__sub-title {
+	text-align: center;
 	margin-bottom: 9px;
-	@include font(14px,700,16px);
+	@include font(14px,700,24px);
 	text-transform: uppercase;
 	color: var(--second-color);
 	
@@ -38,6 +38,9 @@
 }
 
 @media screen and (max-width:768px) {
+	.works-datum{
+	@include padding(60px, 60px);
+}
 	.datum__list{
 		display: flex;
 		flex-wrap:wrap;
@@ -53,6 +56,9 @@
 }
 }
 @media screen and (min-width:767px){
+	.works-datum{
+	@include padding(60px, 60px);
+}
 .datum__list{
 	display: flex;
 	flex-wrap: wrap;
