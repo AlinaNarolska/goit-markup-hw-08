@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     width: 100%;
@@ -39,7 +39,6 @@
     flex-direction: column;
     position: relative;
     height: 100%;
-    padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
 
@@ -72,7 +71,7 @@
  }
 }
 
-@media screen and (min-width:767px) and (min-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px){
 	
 }
 @media screen and (min-width:1200px){}

@@ -20,6 +20,7 @@
 	justify-content:center;
 }
 .datum__title {
+	padding: 0 15px;
 	margin-bottom: 30px;
 }
 
@@ -37,7 +38,7 @@
 	color: var(--plus-color);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 	.works-datum{
 	@include padding(60px, 60px);
 }
@@ -55,7 +56,7 @@
 	margin-bottom: 30px;
 }
 }
-@media screen and (min-width:767px){
+@media screen and (min-width:768px) and (max-width:1199px){
 	.works-datum{
 	@include padding(60px, 60px);
 }
@@ -70,7 +71,7 @@
 	flex-basis: calc((100% - 60px) / 2);
 }
 }
-@media screen and (min-width:1199px){
+@media screen and (min-width:1200px){
 	.container{
 		width: 100%;
 	}

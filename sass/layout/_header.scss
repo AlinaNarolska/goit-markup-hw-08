@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content:space-between;
-
+}
  .logotype {
 	padding-left: 14px;
 	padding-top: 24px;
@@ -26,6 +26,70 @@
  .mobile-menu__container{
 	margin-left: 40px;
  }
+  .menu__link {
+	position: relative;
+	@include padding(32px,32px);
+	font-weight: var(--secondary-font-weight);
+	line-height: var(--main-line-height);
+	letter-spacing: 0.02em;
+	color: var(--second-color);
+	transition-property: color;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	&:hover,
+	&:focus {
+	color: var(--accent-color);
+	}
+ }
+  .contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	gap:10px;
+	margin:0 auto;
+	margin-left: auto;
+ }
+
+ .contact-mail,
+ .contact-phone {
+	text-align: center;
+	margin:0 auto;
+	justify-content:center;
+	gap: 10px;
+
+	font-weight: var(--secondary-font-weight);
+	line-height: var(--main-line-height);
+	letter-spacing: 0.02em;
+	color: var(--plus-color);
+	transition-property: color;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	
+ }
+
+ .contact-mail:hover,
+ .contact-mail:focus,
+ .contact-phone:hover,
+ .contact-phone:focus {
+	color: var(--accent-color);
+	
+ }
+
+ .smartphone,
+ .envelope{
+ fill: currentColor;
+
+}
+
+ .envelope:hover,
+ .envelope:focus,
+ .smartphone:hover,
+ .smartphone:focus{
+
+	fill:currentColor;
+
+ }
+
  @media screen and (max-width:767px) {
  .menu-mobil{
 		margin-bottom: auto;
@@ -120,7 +184,7 @@
 	color: var(--accent-color);
  }
  }
- @media screen and (min-width:767px){
+ @media screen and (min-width:768px) and (max-width:1199px){
  .contacts-mobil{
 	display: none;
  }
@@ -139,44 +203,28 @@
  }
 
  .navigation{
+	align-items: center;
 	display: flex;
 	text-align: center;
 	margin:0 auto;
  }
  .menu-basic{
-	padding-top: 10px;
-	padding-bottom: 30px;
 	display: flex;
 	text-align: center;
 	margin:0 auto;
  }
 
  .menu__item{
-	padding-top: 32px;
 	margin-right: 53px;
 
  }
- .menu__link {
-	position: relative;
-	@include padding(32px,32px);
-	font-weight: var(--secondary-font-weight);
-	line-height: var(--main-line-height);
-	letter-spacing: 0.02em;
-	color: var(--second-color);
-	transition-property: color;
-	transition-duration:var(--transition-duration);
-	transition-timing-function:var(--transition-function);
-	&:hover,
-	&:focus {
-	color: var(--accent-color);
-	}
- }
+
  .curent::after{
 	position:absolute;
 	display: block;
 	content: '';
 	left: 0;
-	bottom:-22px;
+	bottom:0;
 	@include dimensions(100%,4px);
 	border-radius: 2px;
 	background-color: var(--accent-color);
@@ -184,62 +232,59 @@
  .port {
 	color: var(--accent-color);
  }
- 
- .contacts {
-	padding-top: 32px;
-	padding-bottom: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	gap:10px;
-	margin:0 auto;
-	margin-left: auto;
- }
-
- .contact-mail,
- .contact-phone {
-	text-align: center;
-	margin:0 auto;
-	justify-content:center;
-	gap: 10px;
-
-	font-weight: var(--secondary-font-weight);
-	line-height: var(--main-line-height);
-	letter-spacing: 0.02em;
-	color: var(--plus-color);
-	transition-property: color;
-	transition-duration:var(--transition-duration);
-	transition-timing-function:var(--transition-function);
-	
- }
-
- .contact-mail:hover,
- .contact-mail:focus,
- .contact-phone:hover,
- .contact-phone:focus {
-	color: var(--accent-color);
-	
- }
-
- .smartphone,
- .envelope{
- fill: currentColor;
-
 }
 
- .envelope:hover,
- .envelope:focus,
- .smartphone:hover,
- .smartphone:focus{
-
-	fill:currentColor;
-
- }
-}
-@media screen and (min-width:1199px) {
+@media screen and (min-width:1200px) {
 	.contacts{
 		flex-direction: row;
  }
+ .contacts-mobil{
+	display: none;
  }
+ .menu-mobil{
+
+	display: none;
+ }
+ .media__sourse{
+	display: none;
+ }
+ .mobile-menu{
+	display: none;
+ }
+ .mobile-menu-open{
+	display: none;
+ }
+ .page-header-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+ }
+ .menu-basic{
+	align-items: center;
+	display: flex;
+	gap: 53px;
+ }
+ .menu__item:not(:last-child){
+
+	margin-right: 53px;
+
 }
- 
+.navigation{
+	align-items: center;
+	display: flex;
+}
+.contacts {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+
+	
+} 
+ .contacts__source:not(:last-child){
+	margin-right: 50px;
+}
+.contact-mail{
+	margin-right: 27px;
+	margin-left: auto;
+}
+}

@@ -1,10 +1,13 @@
+.portfolio-header{
+	border-bottom: 1px solid var(--odd-color);
+}
 .gallery__services {
 	display:flex;
 	flex-wrap: wrap;
 	gap:8px;
-	justify-content: center;
+	justify-content: flex-start;
 	row-gap: 15px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 .gallery__navigation {
@@ -71,8 +74,7 @@
 	@include font(16px,400,30px);
 	color: var(--plus-color);
 }
-
-@media screen and (max-width:449px) {
+@media screen and (max-width:768px){
 	.gallery__navigation{
 	max-width: 400px;
 	display: flex;
@@ -81,10 +83,6 @@
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	}
-	
-}
-
-@media screen and (min-width:450px){
 	.gallery__list{
 		flex-wrap: wrap;
 		padding: 0;
@@ -97,13 +95,28 @@
 	width: 100%;
  }
 }
-@media screen and (min-width:767px){
+@media screen and (min-width:768px) and (max-width:1199px){
+	.gallery__services{
+		margin-bottom: 30px;
+	}
 	.gallery__card{
 		max-width: 354px;
 		flex-basis: calc(100% - 60px/2);
 	}
+	.gallery__link{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+	}
+	.gallery-cover{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		flex-grow: 1;
+	}
 }
-@media screen and (min-width:1199px){
+@media screen and (min-width:1200px){
 	.gallery__card{
 		max-width: 370px;
 		flex-basis: calc(100% - 90px/3);

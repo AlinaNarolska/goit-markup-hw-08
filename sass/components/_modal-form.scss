@@ -127,14 +127,14 @@
 }
 }
 
-@media screen and (max-width:449px) {
+@media screen and (max-width:767px) {
 	.modal{
 		max-width: 100%;
 	}
 	
 }
 
-@media screen and (min-width:450) and (min-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px){
 	.modal{
 		width: 450px;
 	}
@@ -142,7 +142,7 @@
 		width: 200px;
 	}
 }
-@media screen and (min-width:1200){
+@media screen and (min-width:1200px){
 	.modal{
 		width: 528px;
 	}
