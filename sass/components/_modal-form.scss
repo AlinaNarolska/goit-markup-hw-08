@@ -111,8 +111,9 @@
 	color:var(--accent-color);
 }
 .modal-form-submit{
-	display: block;
-	min-width: 200px;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
 	align-self: center;
 	@include font(16px,700,30px);
 	letter-spacing:var(--secondary-letter-spacing);
@@ -127,4 +128,25 @@
 	background: var(--hover-assent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+}
+
+@media screen and (max-width:449px) {
+	.modal{
+		max-width: 100%;
+	}
+	
+}
+
+@media screen and (min-width:450) and (min-width:1199px){
+	.modal{
+		width: 450px;
+	}
+	.modal-form-submit{
+		width: 200px;
+	}
+}
+@media screen and (min-width:1200){
+	.modal{
+		width: 528px;
+	}
 }

@@ -1,4 +1,6 @@
 .customers{
+	flex-wrap: wrap;
+	padding: 0;
 	display: flex;
 	justify-content: center;
 	gap: 30px;
@@ -6,7 +8,7 @@
 .companies__link{
 	@extend %aling;
 	justify-content: center;
-	@include dimensions(170px,92px);
+	@include dimensions(100%,92px);
 	border: 1px solid var(--extra-color);
 	border-radius: 4px;
 	color:var(--extra-color);
@@ -24,4 +26,27 @@
 .companies__icons{
 	fill:currentColor;
 	
+}
+@media screen and (max-width:768px) {
+	.list__companies{
+		width: 100%;
+		max-height:92px;
+		max-width: 210px;
+		flex-basis: calc(100% - 30px/2);
+	}
+}
+@media screen and (min-width:768px){
+	.list__companies{
+		max-width: 226px;
+		flex-basis: calc(100% - 90px/3);
+	}
+}	
+@media screen and (min-width:1199px){
+	.list__companies{
+		max-width: 170px;
+		flex-basis: calc(100% - 180px/4);
+	}
+	.customers{
+		flex-wrap: nowrap;
+	}
 }

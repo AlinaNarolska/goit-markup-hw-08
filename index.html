@@ -17,7 +17,7 @@
 					<!-- <=========================HEAD=============> -->
 			<a class="logotype" href="index.html"><span class="web-logo">Web</span>Studio</a>
 			<nav class="navigation">
-				<ul class="menu list">
+				<ul class="menu-basic list menu">
 					<li class="menu__item">
 						<a class="menu__link link port curent" href="index.html">Studio</a>
 					</li>
@@ -28,26 +28,85 @@
 						<a class="menu__link link" href="#contacts">Contacts</a>
 					</li>
 				</ul>
-			</nav>
-			<ul class="contacts">
+				<ul class="contacts">
 				<li class="contacts__source">
 					<a class="contact-mail link" href="mailto:info@devstudio.com" aria-label="envelope" >
-					<svg class="envelope" width="16" height="12">
-					<use href="./images/symbol-defs.svg#envelope" ></use>
+						<svg class="envelope" width="16" height="12">
+							<use href="./images/symbol-defs.svg#envelope" ></use>
 					</svg>
 					info@devstudio.com
 					</a>
 				</li>
 				<li class="contacts__source">
 					<a class="contact-phone link" href="tel:+12127724150" aria-label="smartphone">
-					<svg class="smartphone" width="10" height="16">
-					<use href="./images/symbol-defs.svg#smartphone"></use>
+						<svg class="smartphone" width="10" height="16">
+							<use href="./images/symbol-defs.svg#smartphone"></use>
 					</svg>
 					+1 212-772-4150 
 					</a>
 				</li>
-			</ul>
-		  </div>
+				</ul>
+			<button type="button" class="mobile-menu-open" data-menu-open>
+				<svg class="mobile-menu-open__icon" width="40" height="40">
+					<use href="./images/symbol-defs.svg#icon-burger"></use>
+				</svg>
+			</button>
+			<div class="mobile-menu" data-menu>
+				<div class="container mobile-menu__container">
+					<button class="mobile-menu__close-btn" data-menu-close>
+						<svg class="mobile-menu__close-icon" width="40" height="40" aria-label="Switch mobile menu">
+							<use href="./images/symbol-defs.svg#close"></use>
+						</svg>
+					</button>
+					<ul class="menu-mobil list">
+						<li class="menu-mobil__item">
+							<a class="menu-mobil__link link port curent" href="index.html">Studio</a>
+						</li>
+						<li class="menu-mobil__item">
+							<a class="menu-mobil__link link" href="portfolio.html">Portfolio</a>
+						</li>
+						<li class="menu-mobil__item">
+							<a class="menu-mobil__link link" href="#contacts">Contacts</a>
+						</li>
+					</ul>
+					<ul class="contacts-mobil list">
+						<li class="contacts-mobil__source">
+							<a class="contacts-mobil-smart link" href="tel:+12127724150" aria-label="smartphone">
+								+1 212-772-4150 
+							</a>
+						</li>
+						<li class="contacts-mobil__source">
+							<a class="contacts-mobil link" href="mailto:info@devstudio.com" aria-label="envelope">
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="media__sourse list">
+						<li class="media__sourse-list">
+							<a class="source-media link" href="Instagram" aria-label="Instagram">
+								Instagram
+							</a>
+						</li>
+						<li class="media__sourse-list">
+							<a class="source-media link" href="Twitter" aria-label="Twitter">
+								Twitter
+							</a>
+						</li>
+						<li class="media__sourse-list">
+							<a class="source-media link" href="Facebook" aria-label="Facebook">
+								Facebook
+							</a>
+						</li>
+						<li class="media__sourse-list">
+							<a class="source-media link" href="LinkedIn" aria-label="LinkedIn">
+								LinkedIn
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
 		</header>
 		<!-- <========================/HEAD=============> -->
 		<main>
@@ -58,7 +117,6 @@
 					</div>
 					
 			</section>
-
 			<!-- <=========================WORKS WTHIS US-=============> -->
 			<section class="works-datum">
 				<div class="container">
@@ -134,7 +192,38 @@
 						<h2 class="description">Our Team</h2>
 						<ul class="list employees__main">
 							<li class="employees__list">
-								<img class="employees__photo" src="./images/employees/christopher_walker.jpg" alt="Christopher Walker" height="260" width="270" />
+								<picture>
+									<source
+									srcset="./images/desktop/team/chistopher_desktop.webp 1x, ./images/desktop/team/chistopher_desktop@2x.webp 2x, ./images/desktop/team/chistopher_desktop@3x.webp 3x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/desktop/team/chistopher_desktop.jpg 1x, ./images/desktop/team/chistopher_desktop@2x.jpg 2x, ./images/desktop/team/chistopher_desktop@2x.jpg 3x"
+									media="(min-width: 1200px)"
+									/>
+
+									<source
+									srcset="./images/tablet/team/chistopher_tablet.webp 1x, ./images/tablet/team/chistopher_tablet@2x.webp 2x, ./images/tablet/team/chistopher_tablet@3.webp 3x"
+									media="(min-width: 768px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/tablet/team/chistopher_tablet.jpg 1x, ./images/tablet/team/chistopher_tablet@2x.jpg 2x, ./images/tablet/team/chistopher_tablet@3.jpg 3x"
+									media="(min-width: 768px)"
+									/>
+
+									<source
+									srcset="./images/mobile/team/chistopher_mobil.webp 1x, ./images/mobile/team/chistopher_mobil@2x.webp 2x, ./images/mobile/team/chistopher_mobil@3x.webp 3x"
+									media="(max-width: 767px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/mobile/team/chistopher_mobil.jpg 1x, ./images/mobile/team/chistopher_mobil@2x.jpg 2x, ./images/mobile/team/chistopher_mobil@3x.jpg 3x"
+									media="(max-width: 767px)"
+									/>
+									<img class="employees__photo" src="./images/employees/christopher_walker.jpg" alt="Christopher Walker" height="260" width="270" />
+								</picture>
 								<div class="employees__card">
 									<h3 class="employees__name">Christopher Walker</h3>
 									<p class="employees__position">Product Designer</p>
@@ -171,7 +260,38 @@
 								</div>
 							</li>
 							<li class="employees__list">
-								<img class="employees__photo" src="./images/employees/kylie_evans.jpg" alt="Kylie Evans" height="260" width="270" />
+									<picture>
+									<source
+									srcset="./images/desktop/team/kylie_desktop.webp 1x, ./images/desktop/team/kylie_desktop@2x.webp 2x, ./images/desktop/team/kylie_desktop@3x.webp 3x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/desktop/team/kylie_desktop.jpg 1x, ./images/desktop/team/kylie_desktop@2x.jpg 2x, ./images/desktop/team/kylie_desktop@3x.jpg 3x"
+									media="(min-width: 1200px)"
+									/>
+
+									<source
+									srcset="./images/tablet/team/kylie_tablet.webp 1x, ./images/tablet/team/kylie_tablet@2x.webp 2x, ./images/tablet/team/kylie_tablet@3.webp 3x"
+									media="(min-width: 768px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/tablet/team/kylie_tablet.jpg 1x, ./images/tablet/team/kylie_tablet@2x.jpg 2x, ./images/tablet/team/kylie_tablet@3.jpg 3x"
+									media="(min-width: 768px)"
+									/>
+
+									<source
+									srcset="./images/mobile/team/kylie_mobil.webp 1x, ./images/mobile/team/kylie_mobil@2x.webp 2x, ./images/mobile/team/kylie_mobil@3x.webp 3x"
+									media="(max-width: 767px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/mobile/team/kylie_mobil.jpg 1x, ./images/mobile/team/kylie_mobil@2x.jpg 2x, ./images/mobile/team/kylie_mobil@3x.jpg 3x"
+									media="(max-width: 767px)"
+									/>
+									<img class="employees__photo" src="./images/employees/kylie_evans.jpg" alt="Kylie Evans" height="260" width="270" />
+									</picture>
 								<div class="employees__card">
 									<h3 class="employees__name">Kylie Evans</h3>
 									<p class="employees__position">Frontend Developer</p>
@@ -209,7 +329,38 @@
 								</div>
 							</li>
 							<li class="employees__list">
+									<picture>
+									<source
+									srcset="./images/desktop/team/ryan_desktop.webp 1x, ./images/desktop/team/ryan_desktop@2x.webp 2x, ./images/desktop/team/ryan_desktop@3x.webp 3x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/desktop/team/ryan_desktop.jpg 1x, ./images/desktop/team/ryan_desktop@2x.jpg 2x, ./images/desktop/team/ryan_desktop@2x.jpg 3x"
+									media="(min-width: 1200px)"
+									/>
+
+									<source
+									srcset="./images/tablet/team/ryan_tablet.webp 1x, ./images/tablet/team/ryan_tablet@2x.webp 2x, ./images/tablet/team/ryan_tablet@3.webp 3x"
+									media="(min-width: 768px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/tablet/team/ryan_tablet.jpg 1x, ./images/tablet/team/ryan_tablet@2x.jpg 2x, ./images/tablet/team/ryan_tablet@3.jpg 3x"
+									media="(min-width: 768px)"
+									/>
+
+									<source
+									srcset="./images/mobile/team/ryan_mobil.webp 1x, ./images/mobile/team/ryan_mobil@2x.webp 2x, ./images/mobile/team/ryan_mobil@3x.webp 3x"
+									media="(max-width: 767px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/mobile/team/ryan_mobil.jpg 1x, ./images/mobile/team/ryan_mobil@2x.jpg 2x, ./images/mobile/team/ryan_mobil@3x.jpg 3x"
+									media="(max-width: 767px)"
+									/>
 								<img class="employees__photo" src="./images/employees/ryan_harris.jpg" alt="Ryan Harris" height="260" width="270" />
+								</picture>
 								<div class="employees__card">
 									<h3 class="employees__name">Ryan Harris</h3>
 									<p class="employees__position">Marketing</p>
@@ -246,7 +397,38 @@
 								</div>
 							</li>
 							<li class="employees__list">
-								<img class="employees__photo" src="./images/employees/tyler_moore.jpg" alt="Tyler Moore" height="260" width="270" />
+									<picture>
+									<source
+									srcset="./images/desktop/team/tyler_desktop.webp 1x, ./images/desktop/team/tyler_desktop@2x.webp 2x, ./images/desktop/team/tyler_desktop@3x.webp 3x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/desktop/team/tyler_desktop.jpg 1x, ./images/desktop/team/tyler_desktop@2x.jpg 2x, ./images/desktop/team/tyler_desktop@2x.jpg 3x"
+									media="(min-width: 1200px)"
+									/>
+
+									<source
+									srcset="./images/tablet/team/tyler_tablet.webp 1x, ./images/tablet/team/tyler_tablet@2x.webp 2x, ./images/tablet/team/tyler_tablet@3.webp 3x"
+									media="(min-width: 768px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/tablet/team/tyler_tablet.jpg 1x, ./images/tablet/team/tyler_tablet@2x.jpg 2x, ./images/tablet/team/tyler_tablet@3.jpg 3x"
+									media="(min-width: 768px)"
+									/>
+
+									<source
+									srcset="./images/mobile/team/tyler_mobil.webp 1x, ./images/mobile/team/tyler_mobil@2x.webp 2x, ./images/mobile/team/tyler_mobil@3x.webp 3x"
+									media="(max-width: 767px)"
+									type="image/webp"
+									/>
+									<source
+									srcset="./images/mobile/team/tyler_mobil.jpg 1x, ./images/mobile/team/tyler_mobil@2x.jpg 2x, ./images/mobile/team/tyler_mobil@3x.jpg 3x"
+									media="(max-width: 767px)"
+									/>
+									<img class="employees__photo" src="./images/employees/tyler_moore.jpg" alt="Tyler Moore" height="260" width="270" />
+								</picture>
 								<div class="employees__card">
 									<h3 class="employees__name">Tyler Moore</h3>
 									<p class="employees__position">UI Designer</p>
@@ -284,7 +466,7 @@
 							</li>
 						</ul>
 					</div>
-				</section>
+				</section> 
 			<!-- =================CUSTOMERS============ -->
 			<section class="section">
 				<div class="container">
@@ -339,7 +521,9 @@
 		<!-- <===================== FOOTER================> -->
 		<footer class="footer">
 			<div class="container footer-base">
-			<div>
+			<div class="footer-index">
+			<div class="footer-hoiku">
+			<div class="footer-hookup">
 			<a class="footer__logotype footer-container" href="index.html"><span class="web-logo">Web</span>Studio</a>
 			<address class="address" id="contacts">
 				<ul class="footer__contacts list">
@@ -386,6 +570,9 @@
 					</li>
 				</ul>
 			</div>
+			</div>
+			</div>
+
 			<div class="footer__modal-form">
 				<p class="footer__modal-information">Subscribe to the newsletter</p>
 				<form class="footer-wrapper">
@@ -440,6 +627,7 @@
 		</div>
 
 <!-- <===================== /FOOTER================> -->
-	<script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 </html>

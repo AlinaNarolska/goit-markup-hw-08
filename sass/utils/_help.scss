@@ -1,0 +1,80 @@
+.contact-mail,
+.contact-phone {
+	@extend %aling;
+	justify-content:center;
+	gap: 10px;
+
+	font-weight: var(--secondary-font-weight);
+	line-height: var(--main-line-height);
+	letter-spacing: 0.02em;
+	color: var(--plus-color);
+	transition-property: color;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	
+}
+
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-phone:hover,
+.contact-phone:focus {
+	color: var(--accent-color);
+	
+}
+
+.smartphone,
+.envelope{
+
+	fill: currentColor;
+
+}
+
+.envelope:hover,
+.envelope:focus,
+.smartphone:hover,
+.smartphone:focus{
+
+	fill:currentColor;
+
+}
+
+.navigation{
+
+	@extend %aling;
+}
+.menu{
+	@extend %aling;
+
+
+}
+
+.menu__item:not(:last-child){
+	margin-right: 53px;
+
+}
+
+.contacts {
+	@extend %aling;
+	margin-left: auto;
+
+	
+} 
+ .contacts__source:not(:last-child){
+	margin-right: 50px;
+}
+
+
+.menu__link {
+	position: relative;
+	@include padding(32px,32px);
+	@extend %dimensions;
+	letter-spacing: 0.02em;
+	color: var(--second-color);
+	transition-property: color;
+	transition-duration:var(--transition-duration);
+	transition-timing-function:var(--transition-function);
+	&:hover,
+	&:focus {
+	color: var(--accent-color);
+}
+}
