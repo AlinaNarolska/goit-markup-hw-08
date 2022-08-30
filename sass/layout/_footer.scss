@@ -34,6 +34,7 @@
 }
 
 .address {
+	width: 231px;
 	font-style: normal;
 	line-height: 1.71;
 	transition-property: color;
@@ -134,11 +135,7 @@
 	 .footer__items{
 		text-align: center;
 	 }
-	 .footer__modal-form{
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-	 }
+
 	 .footer__modal-information{
 		margin-top: 60px;
 	 }
@@ -165,8 +162,7 @@
 	}
 	.footer-hoiku{
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content:space-around;
 		align-items: baseline;
 		text-align: center;
 	}
@@ -175,6 +171,7 @@
 
 @media screen and (min-width:1200px){
 	.footer-hoiku{
+		justify-content: space-between;
 		display: flex;
 	}
 	.footer-icons{
@@ -182,7 +179,12 @@
 		text-align: center;
 	}
 	.footer-base{
+		justify-content: space-between;
 		display: flex;
 		align-items: baseline;
 	}
+	.footer-hookup{
+		margin-right: 70px;
+	}
+
 }

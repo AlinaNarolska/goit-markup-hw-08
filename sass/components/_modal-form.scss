@@ -111,10 +111,6 @@
 	color:var(--accent-color);
 }
 .modal-form-submit{
-	display: flex;
-	margin-right: auto;
-	margin-left: auto;
-	align-self: center;
 	@include font(16px,700,30px);
 	letter-spacing:var(--secondary-letter-spacing);
 	background-color: var(--accent-color);
@@ -123,6 +119,7 @@
 	transition-property:box-shadow,background-color;
 	transition-duration:var(--transition-duration);
 	transition-timing-function:var(--transition-function);
+	padding: 10px 80px;
 	&:hover,
 	&:focus{
 	background: var(--hover-assent-color);

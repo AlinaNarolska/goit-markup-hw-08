@@ -10,7 +10,9 @@
 	visibility:visible;
 	transition-property: opacity,visibility;
 	transition-duration:var(--transition-duration);
-    transition-timing-function:var(--transition-function);
+	transition-timing-function:var(--transition-function);
+	padding: 94px 12px;
+	overflow-y: scroll;
 	
 	
 &.is-hidden {
