@@ -58,15 +58,13 @@
 	transition-timing-function:var(--transition-function);
 	
 }
-@media screen and (max-width:768px){
-	.footer-wrapper{
-	flex-direction: column;
-}
+@media screen and (max-width:767px){
+
 	.footer-form-submit{
 		margin-top: 20px;
 	}
 }
-@media screen and (min-width:767px) and (min-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px){
 	.footer__modal-form{
 		display: block;
 		margin-top:60px;
