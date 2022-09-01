@@ -11,7 +11,9 @@
 	@include font(26px,700,30px);
 	text-decoration: none;
 	color: var(--accent-color);
-	
+	&:hover, &:focus{
+		color:var(--staple-color);
+	}
 }
 
 .footer__source{

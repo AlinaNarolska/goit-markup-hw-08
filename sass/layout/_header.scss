@@ -105,17 +105,6 @@
 	margin-right: 53px;
 
  }
-
- .curent::after{
-	position:absolute;
-	display: block;
-	content: '';
-	left: 0;
-	bottom:0;
-	@include dimensions(100%,4px);
-	border-radius: 2px;
-	background-color: var(--accent-color);
- }
  .port {
 	color: var(--accent-color);
  }
@@ -231,7 +220,16 @@
  .mobile-menu-open{
 	display: none;
  }
-
+ .curent::after{
+	position:absolute;
+	display: block;
+	content: '';
+	left: 0;
+	bottom:0;
+	@include dimensions(100%,4px);
+	border-radius: 2px;
+	background-color: var(--accent-color);
+ }
  }
 
 @media screen and (min-width:1200px) {

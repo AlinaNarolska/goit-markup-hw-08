@@ -19,13 +19,11 @@
 	display: flex;
 	justify-content:center;
 }
-.datum__title {
-	padding: 0 15px;
+.datum__title:not(:last-child) {
+	max-width: 768px;
 	margin-bottom: 30px;
 }
-
 .datum__sub-title {
-	text-align: center;
 	margin-bottom: 9px;
 	@include font(14px,700,24px);
 	text-transform: uppercase;
@@ -55,12 +53,17 @@
 	border-radius: 4px;
 	margin-bottom: 30px;
 }
+	.datum__sub-title{
+		max-width: 767px;
+		text-align: center;
+	}
 }
 @media screen and (min-width:768px) and (max-width:1199px){
 	.works-datum{
 	@include padding(60px, 60px);
 }
 .datum__list{
+	margin-right: -30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

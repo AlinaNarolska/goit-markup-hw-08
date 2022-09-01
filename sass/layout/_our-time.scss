@@ -7,8 +7,8 @@
     color: var(--second-color);
 }
 .employees-sections {
-	padding-top:94px ;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	background-color:var(--further-color);
 
 }
@@ -96,5 +96,9 @@
 }
 .employees__photo{
 		width: 100%;
+	}
+	.employees-sections{
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 }	

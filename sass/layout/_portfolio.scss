@@ -85,11 +85,10 @@
 	}
 	.gallery__list{
 		flex-wrap: wrap;
-		padding: 0;
+		
 	}
 	.gallery__card{
-		max-width: 450px;
-		flex-basis: calc(100% - 30px/1);	
+		max-width: 450px;	
  }
  .gallery__photos{
 	width: 100%;
@@ -98,6 +97,7 @@
 @media screen and (min-width:768px) and (max-width:1199px){
 	.gallery__services{
 		margin-bottom: 30px;
+		justify-content: center;
 	}
 	.gallery__card{
 		max-width: 354px;
@@ -106,13 +106,10 @@
 	.gallery__link{
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		height: 100%;
 
 	}
 	.gallery-cover{
-		display: flex;
-		flex-direction: column;
-		height: 100%;
 		flex-grow: 1;
 	}
 }
