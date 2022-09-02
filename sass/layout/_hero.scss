@@ -1,105 +1,103 @@
 .hero-title {
-	@include padding(200px,200px);
+	@include padding(200px, 200px);
 	max-width: 1600px;
 	max-height: 600px;
 	text-align: center;
-	margin:0 auto;
+	margin: 0 auto;
 	background-color: var(--auxiliary-color);
-	background-position:center;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("..//..//images/page-photo/desing-team.jpg ");
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url("..//..//images/page-photo/desing-team.jpg ");
 	background-size: cover;
 	background-color: var(--odd-color-bright);
 }
 
- .main-title{
+.main-title {
 	width: 300px;
 	text-align: center;
-	margin:0 auto;
+	margin: 0 auto;
 	margin-bottom: 30px;
-	@include font (27px,900,42px);
-	letter-spacing:var(--secondary-letter-spacing);
-	color:var(--staple-color);
- }
-	.but-regist {
+	@include font(27px, 900, 42px);
+	letter-spacing: var(--secondary-letter-spacing);
+	color: var(--staple-color);
+}
+.but-regist {
 	display: inline-block;
 	min-width: 200px;
-	@include font (16px,700,30px);
-	letter-spacing:var(--secondary-letter-spacing);
+	@include font(16px, 700, 30px);
+	letter-spacing: var(--secondary-letter-spacing);
 	background: var(--accent-color);
 	color: var(--staple-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	transition-property:color;
-	transition-duration:var(--transition-duration);
-	transition-timing-function:var(--transition-function);
-	
+	transition-property: color;
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
+
 	&:hover,
 	&:focus {
-	background-color:var(--hover-assent-color);
- }
- }
- @media screen and (max-width:767px){
- .hero-title{
-	width: 480px;
-	background-image: url('..//..//images/mobile/heade/team_mobil.jpg');
+		background-color: var(--hover-assent-color);
 	}
- @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
- screen and (min-resolution:192dpi)and (max-width:767px),
- screen and (min-resolution:2dppx)and (max-width:767px){
- .hero-title{
-	background-image: url('..//..//images/mobile/heade/team_mobil@2x.jpg');
-	max-width: 480px;
-	height: 400px;
-	padding: 118px 0;
- }
- }
- @media screen and (min-device-pixel-ratio:3) and (max-width:767px),
- screen and (min-resolution:288dpi)and (max-width:767px),
- screen and (min-resolution:3dppx)and (max-width:767px){
- .hero-title{
-	background-image:url('..//..//images/mobile/heade/team_mobil@3x.jpg');
- }
- }
- }
- @media screen and (min-width:768px){
-
- .hero-title{
-	background-image: url('..//..//images/tablet/heade/team_tablet.jpg');
+}
+@media screen and (max-width: 767px) {
+	.hero-title {
+		background-image: url("..//..//images/mobile/heade/team_mobil.jpg");
 	}
- @media screen and (min-device-pixel-ratio:2) and (min-width:768px),
- screen and (min-resolution:192dpi)and (min-width:768px) ,
- screen and (min-resolution:2dppx)and (min-width:768px){
- .hero-title{
-	background-image: url('..//..//images/tablet/heade/team_tablet@2x.jpg');
- }
- }
- @media screen and (min-device-pixel-ratio:3) and (min-width:768px),
- screen and (min-resolution:288dpi)and (min-width:768px),
- screen and (min-resolution:3dppx)and (min-width:768px){
- .hero-title{
-	background-image:url('..//..//images/tablet/heade/team_tablet@3x.jpg');
- }
- }
- }
+	@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+		screen and (min-resolution: 192dpi) and (max-width: 767px),
+		screen and (min-resolution: 2dppx) and (max-width: 767px) {
+		.hero-title {
+			background-image: url("..//..//images/mobile/heade/team_mobil@2x.jpg");
+			max-width: 480px;
+			height: 400px;
+			padding: 118px 0;
+		}
+	}
+	@media screen and (min-device-pixel-ratio: 3) and (max-width: 767px),
+		screen and (min-resolution: 288dpi) and (max-width: 767px),
+		screen and (min-resolution: 3dppx) and (max-width: 767px) {
+		.hero-title {
+			background-image: url("..//..//images/mobile/heade/team_mobil@3x.jpg");
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.hero-title {
+		background-image: url("..//..//images/tablet/heade/team_tablet.jpg");
+	}
+	@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+		screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px) {
+		.hero-title {
+			background-image: url("..//..//images/tablet/heade/team_tablet@2x.jpg");
+		}
+	}
+	@media screen and (min-device-pixel-ratio: 3) and (min-width: 768px),
+		screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px) {
+		.hero-title {
+			background-image: url("..//..//images/tablet/heade/team_tablet@3x.jpg");
+		}
+	}
+}
 
-@media screen and (min-width:1200px){
-	.hero-title{
-		background-image: url('..//..//images/desktop/heade/team_desktop.jpg');
+@media screen and (min-width: 1200px) {
+	.hero-title {
+		background-image: url("..//..//images/desktop/heade/team_desktop.jpg");
 	}
 
- @media screen and (min-device-pixel-ratio:2) and (min-width:1200px),
- screen and (min-resolution:192dpi)and (min-width:1200px),
- screen and (min-resolution:2dppx)and (min-width:1200px){
- .hero-title{
-	background-image: url('..//..//images/desktop/heade/team_desktop@2x.jpg');
- }
- }
- @media screen and (min-device-pixel-ratio:3) and (min-width:1200px),
- screen and (min-resolution:288dpi)and (min-width:1200px),
- screen and (min-resolution:3dppx)and (min-width:1200px){
- .hero-title{
-	background-image:url('..//..//images/desktop/heade/team_desktop@3x.jpg');
- }
- }
- }
-
+	@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+		screen and (min-resolution: 192dpi) and (min-width: 1200px),
+		screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+		.hero-title {
+			background-image: url("..//..//images/desktop/heade/team_desktop@2x.jpg");
+		}
+	}
+	@media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
+		screen and (min-resolution: 288dpi) and (min-width: 1200px),
+		screen and (min-resolution: 3dppx) and (min-width: 1200px) {
+		.hero-title {
+			background-image: url("..//..//images/desktop/heade/team_desktop@3x.jpg");
+		}
+	}
+}

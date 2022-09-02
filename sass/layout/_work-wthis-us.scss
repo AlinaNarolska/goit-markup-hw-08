@@ -1,23 +1,23 @@
-.datum__icons-functions{
+.datum__icons-functions {
 	@extend %aling;
 	justify-content: center;
-	@include dimensions(100%,120px);
+	@include dimensions(100%, 120px);
 	background-color: var(--further-color);
 	border-radius: 4px;
 	margin-bottom: 30px;
 }
-.datum__icons-works{
+.datum__icons-works {
 	@extend %aling;
 	justify-content: center;
-	gap:30px;
+	gap: 30px;
 }
 
-.works-datum{
+.works-datum {
 	@include padding(94px, 94px);
-} 
-.datum__list{
+}
+.datum__list {
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 }
 .datum__title:not(:last-child) {
 	max-width: 768px;
@@ -25,65 +25,63 @@
 }
 .datum__sub-title {
 	margin-bottom: 9px;
-	@include font(14px,700,24px);
+	@include font(14px, 700, 24px);
 	text-transform: uppercase;
 	color: var(--second-color);
-	
 }
 
 .datum__middle-title {
-	@include font(14px,400,24px);
+	@include font(14px, 400, 24px);
 	color: var(--plus-color);
 }
 
-@media screen and (max-width:767px) {
-	.works-datum{
-	@include padding(60px, 60px);
-}
-	.datum__list{
+@media screen and (max-width: 767px) {
+	.works-datum {
+		@include padding(60px, 60px);
+	}
+	.datum__list {
 		display: flex;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 		padding: 0;
 	}
-	.datum__icons-functions{
-	@extend %aling;
-	justify-content: center;
-	@include dimensions(100%,120px);
-	background-color: var(--further-color);
-	border-radius: 4px;
-	margin-bottom: 30px;
-}
-	.datum__sub-title{
+	.datum__icons-functions {
+		@extend %aling;
+		justify-content: center;
+		@include dimensions(100%, 120px);
+		background-color: var(--further-color);
+		border-radius: 4px;
+		margin-bottom: 30px;
+	}
+	.datum__sub-title {
 		max-width: 767px;
 		text-align: center;
 	}
 }
-@media screen and (min-width:768px) and (max-width:1199px){
-	.works-datum{
-	@include padding(60px, 60px);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.works-datum {
+		@include padding(60px, 60px);
+	}
+	.datum__list {
+		margin-right: -30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.datum__title {
+		margin-right: 30px;
+		flex-basis: calc((100% - 60px) / 2);
+	}
 }
-.datum__list{
-	margin-right: -30px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-}
-.datum__title{
-	margin-right: 30px;
-	flex-basis: calc((100% - 60px) / 2);
-}
-}
-@media screen and (min-width:1200px){
-	.container{
+@media screen and (min-width: 1200px) {
+	.container {
 		width: 100%;
 	}
-.datum__list{
-	display: flex;
-	justify-content:center;
-
-}
-.datum__title {
-	flex-basis: calc((100% - 120px) / 4);
-}
+	.datum__list {
+		gap: 30px;
+		display: flex;
+		justify-content: center;
+	}
+	.datum__title {
+		flex-basis: calc((100% - 120px) / 4);
+	}
 }
